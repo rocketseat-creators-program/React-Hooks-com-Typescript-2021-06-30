@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+\<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Compartilhando React Hooks com o Typescript
 
-## Available Scripts
+Olá experts, nessa aula vamos aprender como criar e compartilhar hooks com TypeScript,
+criando hooks de forma modular para que possam ser usados em vários
+partes de uma aplicação e também combiná-las para criar outros
+hooks personalizados, vamos aprender como usar o TypeScript para prover uma
+boa experiência de desenvolvimento aumentando assim a qualidade do nosso código.
 
-In the project directory, you can run:
+## Primeiros passos 🏁
 
-### `yarn start`
+Clone o repositório.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+gh repo clone git@github.com:rocketseat-experts-club/React-Hooks-com-Typescript-2021-06-30.git
+react-hooks-typescript
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`cd` no diretório.
 
-### `yarn test`
+```sh
+cd react-hooks-typescript
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instale as dependências do projeto:
 
-### `yarn build`
+```sh
+yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Inicie o servidor de desenvolvimento:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Inicie o servidor da API
 
-### `yarn eject`
+```sh
+yarn start:server
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Finalmente, vá para [localhost: 3000](http://localhost:3000) no navegador de sua escolha e você está pronto para ir 🚀.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+💡 **Dica profissional** use o branch `main` como guia de referência final, este branch contém o projeto final para que você possa acompanhar, para inciar o projeto utilize o branch **start**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Ferramentas 🧰
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [x] React como uma linguagem de IU
+- [x] Typescript
+- [x] json-server como local API
+## Estrutura do Projeto 🏗
 
-## Learn More
+Na pasta src, temos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `hooks`: pasta onde vamos criar e compartilhar nossos hooks
+- `pages` :  pasta com as rotas das nossa aplicação
+- `components` :  pasta contendo os componentes compartilhados
+- `service`: configuração basica do nossos serviços
+- `server` :  json contendo o nosso db local
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Expert
 
-### Code Splitting
+| [<img src="https://avatars.githubusercontent.com/u/7741167?s=460&u=41e738d1178fcf31656665fe34c1c490d9c271cb&v=4" width="75px;"/>](https://github.com/vitormalencar) |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                          [Vitor Alencar](https://github.com/vitormalencar)                                                          |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Projetado com ♥ por [vitormalencar](https://vitormalencar.com). Licenciado sob a [Licença MIT](licença).
