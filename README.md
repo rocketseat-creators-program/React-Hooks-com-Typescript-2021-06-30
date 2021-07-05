@@ -1,4 +1,4 @@
-\<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
+<img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
 ## Compartilhando React Hooks com o Typescript
 
