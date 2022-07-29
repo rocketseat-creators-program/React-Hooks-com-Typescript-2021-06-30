@@ -1,24 +1,28 @@
-import React from "react";
+import { useToggle } from "../hooks/useToggle";
 
-const Toggle = (props: any) => (
-  <div className="dark-mode-toggle">
-    <button type="button" onClick={() => props.setDarkMode(false)}>
-      ☀
-    </button>
-    <span className="toggle-control">
-      <input
-        className="dmcheck"
-        id="dmcheck"
-        type="checkbox"
-        checked={props.darkMode}
-        onChange={() => props.setDarkMode(!props.darkMode)}
-      />
-      <label htmlFor="dmcheck" />
-    </span>
-    <button type="button" onClick={() => props.setDarkMode(true)}>
-      ☾
-    </button>
-  </div>
-);
+const Toggle = (props: any) => {
+  const [toggled, setToggle] = useToggle(false);
+
+  return (
+    <div className="dark-mode-toggle">
+      <button type="button" onClick={setToggle}>
+        ☀
+      </button>
+      <span className="toggle-control">
+        <input
+          className="dmcheck"
+          id="dmcheck"
+          type="checkbox"
+          checked={toggled}
+          onChange={setToggle}
+        />
+        <label htmlFor="dmcheck" />
+      </span>
+      <button type="button" onClick={setToggle}>
+        ☾
+      </button>
+    </div>
+  )
+};
 
 export default Toggle;
